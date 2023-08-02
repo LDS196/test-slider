@@ -1,0 +1,11 @@
+@import "src/scss/variables";
+
+.title{
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  width: 100%;
+  max-width: 353px;
+  word-break: break-word;
+  color:$colorText;
+}

@@ -1,0 +1,48 @@
+@import "src/scss/variables";
+
+.control {
+  display: flex;
+  gap: 0 20px;
+}
+
+button {
+  display: block;
+  background: none;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border: 1px solid $colorLine;
+  border-radius: 50%;
+
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid $colorLineHover;
+  border-left: 2px solid $colorLineHover;
+  top: 18px;
+
+}
+
+.buttonNext::after {
+  left: 17px;
+  transform: rotate(135deg);
+}
+
+.buttonPrev::after {
+  left: 20px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  border-color: $colorLineHover;
+  &:after {
+    border-top: 2px solid $colorText;
+    border-left: 2px solid $colorText;
+  }
+}

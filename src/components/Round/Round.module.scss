@@ -1,0 +1,98 @@
+@import "src/scss/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapperControl{
+  padding-left: 80px;
+  margin-top: -40px;
+}
+.container {
+  width: 530px;
+  height: 530px;
+  border-radius: 50%;
+  border: 1px solid $colorLine;
+  position: relative;
+
+}
+
+.block {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -28px;
+  left: 237px;
+  transform-origin: 28px 293px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    background-color: $backgroundPage;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid $colorSmallRound;
+    border-radius: 50%;
+    color: $colorText;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+
+    span {
+      left: 71px;
+      position: absolute;
+      font-weight: 700;
+      color: $colorText;
+      font-size: 20px;
+      line-height: 30px;
+      animation-fill-mode: forwards;
+      animation-name: title;
+      animation-duration: 0.5s;
+    }
+
+  }
+}
+
+.emptyBlock {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: $colorText;
+}
+
+.animeHover {
+  animation-fill-mode: forwards;
+  animation-name: animeHover;
+  animation-duration: 0.35s;
+}
+
+@keyframes animeHover {
+  0% {
+    opacity: 0;
+    background: $colorText;
+  }
+  100% {
+    opacity: 1;
+    background: $backgroundPage;
+
+  }
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
