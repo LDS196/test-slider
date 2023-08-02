@@ -12,7 +12,7 @@ const Control = ({setNextPeriod,setPrevPeriod,currentPeriodId,countPeriod}:Props
 
   const disableNextButton= countPeriod===currentPeriodId
   const disablePrevButton= currentPeriodId===1
-  console.log(disableNextButton)
+
   return (
     <div className={s.control}>
 

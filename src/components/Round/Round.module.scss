@@ -4,16 +4,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.wrapperControl{
+
+.wrapperControl {
   padding-left: 80px;
   margin-top: -40px;
 }
+
+.date {
+  position: absolute;
+}
+
 .container {
   width: 530px;
   height: 530px;
   border-radius: 50%;
-  border: 1px solid $colorLine;
+  border: 1px solid $colorRound;
   position: relative;
 
 }
@@ -89,7 +96,7 @@
   0% {
     opacity: 0;
   }
-  80% {
+  98% {
     opacity: 0;
   }
   100% {

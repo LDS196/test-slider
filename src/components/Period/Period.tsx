@@ -24,13 +24,12 @@ const Period = () => {
       </div>
 
 
-
       <Round/>
 
 
-</div>
-)
-  ;
+    </div>
+  )
+    ;
 };
 
 export default Period;

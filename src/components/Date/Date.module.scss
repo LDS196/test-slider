@@ -1,0 +1,15 @@
+@import "src/scss/variables";
+.date{
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160px;
+  letter-spacing: -4px;
+}
+.startDate{
+  color: $colorDatePurple;
+  margin-right: 70px;
+}
+.endDate{
+  color: $colorDatePink;
+}

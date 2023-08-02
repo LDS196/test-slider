@@ -11,7 +11,7 @@ button {
   position: relative;
   height: 50px;
   width: 50px;
-  border: 1px solid $colorLine;
+  border: 1px solid $colorSmallRound;
   border-radius: 50%;
 
 }
@@ -25,7 +25,7 @@ button::after {
   height: 10px;
   border-top: 2px solid $colorLineHover;
   border-left: 2px solid $colorLineHover;
-  top: 18px;
+  top: 20px;
 
 }
 
@@ -40,7 +40,7 @@ button::after {
 }
 
 button:hover {
-  border-color: $colorLineHover;
+  border-color: $colorText;
   &:after {
     border-top: 2px solid $colorText;
     border-left: 2px solid $colorText;
