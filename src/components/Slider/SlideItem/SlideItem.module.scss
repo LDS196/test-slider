@@ -1,0 +1,26 @@
+@import "src/scss/variables";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+
+.itemDate {
+  color: $colorDateBlue;
+  font-family: Bebas Neue;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.itemDescription {
+  color: $colorText;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  word-break: break-word;
+}

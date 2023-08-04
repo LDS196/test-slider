@@ -1,0 +1,33 @@
+@import "src/scss/variables";
+
+.buttonPrev {
+
+  display: block;
+  background-color: white;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+
+}
+
+.buttonPrev::after {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid $colorDateBlue;
+  border-left: 2px solid $colorDateBlue;
+  top: 16px;
+
+}
+
+
+
+.buttonPrev::after {
+  left: 17px;
+  transform: rotate(-45deg);
+}

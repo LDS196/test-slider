@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import s from './Round.module.scss'
-import {data} from '../../data/data'
+import {data, Event} from '../../data/data'
 import Control from "../Control/Control";
 import Counter from "../Counter/Counter";
 import Date from "../Date/Date";
+import Slider from "../Slider/Slider";
+import SlideNextButton from "../Slider/SlideNextButton/SlideNextButton";
 
 const shift = 30 //первоначальное смещение
 const fullRound = 360 // 360 градусов полный круг
@@ -16,6 +18,8 @@ const Round = () => {
   const [rotateRound, setRotateRound] = useState(0) // поворот круга при клике
 
   const currentPeriod = data.find(el => el.id === currentPeriodId)
+  const events = currentPeriod?.events as Event[]
+
   const nextStartDate = currentPeriod?.startDate as number
   const nextEndDate = currentPeriod?.endDate as number
 
@@ -106,6 +110,10 @@ const Round = () => {
         <Control currentPeriodId={currentPeriodId} countPeriod={countPeriod} setNextPeriod={setNextPeriod}
                  setPrevPeriod={setPrevPeriod}/>
       </div>
+
+
+        <Slider events={events}/>
+
 
 
     </div>
