@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import SlideItem from "./SlideItem/SlideItem";
 import s from './Slider.module.scss'
 import {SlidePrevButton} from "./SlidePrevButton/SlidePrevButton";
+import SlideNextButton from "./SlideNextButton/SlideNextButton";
 
 
 type Props = {
@@ -19,8 +20,10 @@ type Props = {
 const Slider = ({events}: Props) => {
 
   return (
-    <div className={s.slider}>
-      <SlidePrevButton/>
+    <div
+      // className={s.slider}
+    >
+
       <Swiper
 
         // @ts-ignore
@@ -31,10 +34,12 @@ const Slider = ({events}: Props) => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
+        <SlidePrevButton/>
+        {events.map(event => <SwiperSlide key={event.id}>
+          <SlideItem date={event.date} description={event.description}/>
+        </SwiperSlide>)}
 
-        {events.map(event => <SwiperSlide key={event.id}><SlideItem date={event.date} description={event.description}/></SwiperSlide>)}
         <SlideNextButton/>
-
 
       </Swiper>
 
@@ -43,12 +48,6 @@ const Slider = ({events}: Props) => {
 };
 
 
- export function SlideNextButton() {
-  const swiper = useSwiper();
 
-  return (
-    <button onClick={() => swiper.slideNext()}>Slide to the next slide</button>
-  );
-}
 
 export default Slider;
