@@ -11,10 +11,8 @@ const Period = () => {
 
     <div className={s.container}>
       <div className={s.line}>
-        <Line/>
       </div>
       <div className={s.lineVertical}>
-        <Line/>
       </div>
       <div className={s.lineGradient}>
         <LineGradient/>

@@ -9,12 +9,16 @@
   position: relative;
   padding-top: 215px;
   padding-bottom: 104px;
+
 }
 
 .lineGradient {
   position: absolute;
   top: 177px;
   left: 0;
+  @media screen and (max-width: 550px)  {
+   display: none;
+  }
 }
 
 .line {
@@ -22,10 +26,22 @@
   height: 1px;
   position: absolute;
   top: 480px;
+  background-color: $colorLine;
+  @media screen and (max-width: 550px)  {
+    display: none;
+  }
 }
 
 .lineVertical {
-  transform: rotate(90deg);
+  border-left: 1px solid $colorLine ;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.5px;
+  top: 0;
+  @media screen and (max-width: 550px)  {
+    display: none;
+  }
 }
 
 .title {

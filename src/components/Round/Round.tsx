@@ -111,12 +111,8 @@ const Round = () => {
                  setPrevPeriod={setPrevPeriod}/>
       </div>
 
-      <div className={s.wrapperSlider}>
+
         <Slider events={events}/>
-      </div>
-
-
-
 
     </div>
   );

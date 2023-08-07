@@ -19,7 +19,8 @@ type Props = {
 
 
 const Slider = ({events}: Props) => {
-
+  const swiper = useSwiper();
+  console.log(swiper)
 
   const slides = events.map(event => <SwiperSlide key={event.id}>
     <SlideItem date={event.date} description={event.description}/>
@@ -35,7 +36,7 @@ const Slider = ({events}: Props) => {
         spaceBetween={80}
         slidesPerView={3}
         // navigation
-        
+        breakpoints
         onSwiper={(swiper) => console.log(swiper.activeIndex)}
         onSlideChange={() => console.log('slide change')}
       >

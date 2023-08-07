@@ -5,10 +5,26 @@
   font-weight: 700;
   line-height: 160px;
   letter-spacing: -4px;
+  @media screen and (max-width: 1024px)  {
+    font-size: 130px;
+    line-height: 160px;
+  }
+  @media screen and (max-width: 768px)  {
+    font-size: 80px;
+    line-height: 160px;
+  }
+  @media screen and (max-width: 550px)  {
+    font-size: 56px;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
 }
 .startDate{
   color: $colorDatePurple;
   margin-right: 70px;
+  @media screen and (max-width: 550px)  {
+    margin-right:40px;
+  }
 }
 .endDate{
   color: $colorDatePink;
