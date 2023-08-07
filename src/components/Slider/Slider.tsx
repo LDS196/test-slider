@@ -42,7 +42,7 @@ const Slider = ({events}: Props) => {
           400: {
             slidesPerView: 3,
             spaceBetween: 25,
-            pagination:true,
+            pagination:false,
           },
           768: {
             slidesPerView: 3,
