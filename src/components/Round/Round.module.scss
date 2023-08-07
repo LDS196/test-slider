@@ -1,6 +1,10 @@
 @import "src/scss/variables";
 
-.wrapper {
+.round {
+  position: relative;
+}
+
+.wrapperDate {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,10 +15,26 @@
   padding-left: 80px;
   margin-top: -40px;
   margin-bottom: 56px;
+  @media screen and (max-width: 550px) {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
 }
 
 .date {
   position: absolute;
+  @media screen and (max-width: 550px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 57px;
+    border-bottom: 1px solid $colorLine;
+    margin-bottom: 20px;
+  }
 }
 
 .container {

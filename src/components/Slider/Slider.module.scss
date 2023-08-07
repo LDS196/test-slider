@@ -4,18 +4,26 @@
 .slider {
   position: relative;
   padding: 0 80px;
+  @media screen and (max-width: 550px) {
+    padding: 0 20px 0 20px;
+  }
 }
-
 .prevButton {
   position: absolute;
   left: 20px;
   top: 50px;
+  @media screen and (max-width: 550px) {
+  display: none;
+  }
 }
 
 .nextButton {
   position: absolute;
   right: 20px;
   top: 50px;
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
 }
 
 

@@ -33,18 +33,37 @@ const Slider = ({events}: Props) => {
 
         // @ts-ignore
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={80}
-        slidesPerView={3}
-        // navigation
-        breakpoints
-        onSwiper={(swiper) => console.log(swiper.activeIndex)}
-        onSlideChange={() => console.log('slide change')}
+        spaceBetween={20}
+        slidesPerView={1.5}
+        pagination={{
+          clickable:true,
+        }}
+        breakpoints={{
+          400: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            pagination:true,
+          },
+          768: {
+            slidesPerView: 3,
+            pagination:false,
+            spaceBetween: 40,
+
+          },
+          1024: {
+            slidesPerView: 3,
+            pagination:false,
+            spaceBetween: 80,
+
+          },
+
+        }}
       >
         <div className={s.prevButton}>
           <SlidePrevButton/>
         </div>
 
-       {slides}
+        {slides}
 
 
         <div className={s.nextButton}>

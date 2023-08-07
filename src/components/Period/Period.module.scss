@@ -9,15 +9,17 @@
   position: relative;
   padding-top: 215px;
   padding-bottom: 104px;
-
+  @media screen and (max-width: 550px) {
+    padding: 59px 0 13px 0;
+  }
 }
 
 .lineGradient {
   position: absolute;
   top: 177px;
   left: 0;
-  @media screen and (max-width: 550px)  {
-   display: none;
+  @media screen and (max-width: 550px) {
+    display: none;
   }
 }
 
@@ -27,19 +29,19 @@
   position: absolute;
   top: 480px;
   background-color: $colorLine;
-  @media screen and (max-width: 550px)  {
+  @media screen and (max-width: 550px) {
     display: none;
   }
 }
 
 .lineVertical {
-  border-left: 1px solid $colorLine ;
+  border-left: 1px solid $colorLine;
   height: 100%;
   position: absolute;
   left: 50%;
   margin-left: -0.5px;
   top: 0;
-  @media screen and (max-width: 550px)  {
+  @media screen and (max-width: 550px) {
     display: none;
   }
 }
@@ -48,4 +50,11 @@
   position: absolute;
   top: 170px;
   left: 78px;
+  @media screen and (max-width: 550px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 56px;
+    padding-left: 20px;
+  }
 }

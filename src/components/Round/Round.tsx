@@ -91,8 +91,8 @@ const Round = () => {
   })
 
   return (
-    <div>
-      <div className={s.wrapper}>
+    <div className={s.round}>
+      <div className={s.wrapperDate}>
         <div className={s.date}>
           <Date
             nextStartDate={nextStartDate}

@@ -3,6 +3,9 @@
 .control {
   display: flex;
   gap: 0 20px;
+  @media screen and (max-width: 550px) {
+    gap: 0 8px;
+  }
   button {
     display: block;
     background: none;
@@ -22,11 +25,16 @@
     position: absolute;
     z-index: 11;
     display: block;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     border-top: 2px solid $colorLineHover;
     border-left: 2px solid $colorLineHover;
-    top: 9px;
+    top: 20px;
+    @media screen and (max-width: 550px)  {
+      width: 5px;
+      height: 5px;
+      top: 9px;
+    }
 
   }
   button:hover {
@@ -41,13 +49,18 @@
 
 
 .buttonNext::after {
-  left: 8px;
+  left: 17px;
   transform: rotate(135deg);
+  @media screen and (max-width: 550px)  {
+    left: 8px;
+  }
 }
 
 .buttonPrev::after {
-  left: 10px;
+  left: 20px;
   transform: rotate(-45deg);
+  @media screen and (max-width: 550px)  {
+    left: 10px;  }
 }
 
 

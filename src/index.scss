@@ -1,0 +1,52 @@
+@import "src/scss/variables";
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', 'Bebas Neue', sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  //max-width: 400px !important;
+  //@media screen and (max-width: 550px) {
+  //  max-width: 166px !important;  }
+}
+
+.swiper {
+  position: static !important;
+  cursor: grab;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: $colorSmallRound;
+  width: 6px;
+  height: 6px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color:$colorText ;
+}
