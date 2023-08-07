@@ -4,11 +4,11 @@ import s from './SlidePrevButton.module.scss'
 
 export function SlidePrevButton() {
   const swiper = useSwiper();
-
+  console.log(swiper.activeIndex)
   return (
     <button
       className={s.buttonPrev}
-      onClick={() => swiper.slideNext}
+      onClick={() => swiper.slidePrev()}
     >
     </button>
   );

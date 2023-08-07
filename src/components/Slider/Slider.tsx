@@ -17,37 +17,46 @@ type Props = {
   events: Event[]
 }
 
+
 const Slider = ({events}: Props) => {
 
-  return (
-    <div
-      // className={s.slider}
-    >
 
+  const slides = events.map(event => <SwiperSlide key={event.id}>
+    <SlideItem date={event.date} description={event.description}/>
+  </SwiperSlide>)
+
+  return (
+
+    <div className={s.slider}>
       <Swiper
 
         // @ts-ignore
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        // spaceBetween={50}
+        spaceBetween={80}
         slidesPerView={3}
         // navigation
-        onSwiper={(swiper) => console.log(swiper)}
+        
+        onSwiper={(swiper) => console.log(swiper.activeIndex)}
         onSlideChange={() => console.log('slide change')}
       >
-        <SlidePrevButton/>
-        {events.map(event => <SwiperSlide key={event.id}>
-          <SlideItem date={event.date} description={event.description}/>
-        </SwiperSlide>)}
+        <div className={s.prevButton}>
+          <SlidePrevButton/>
+        </div>
 
-        <SlideNextButton/>
+       {slides}
+
+
+        <div className={s.nextButton}>
+          <SlideNextButton/>
+        </div>
+
 
       </Swiper>
-
     </div>
+
+
   );
 };
-
-
 
 
 export default Slider;

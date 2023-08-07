@@ -2,9 +2,20 @@
 
 
 .slider {
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  gap: 0 20px;
-  justify-content: space-between;
+  position: relative;
+  padding: 0 80px;
 }
+
+.prevButton {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+.nextButton {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+
+
