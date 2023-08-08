@@ -39,16 +39,15 @@ const Slider = ({events}: Props) => {
           clickable:true,
         }}
         breakpoints={{
-          400: {
-            slidesPerView: 3,
+          100: {
+            pagination:true,
             spaceBetween: 25,
-            pagination:false,
+            slidesPerView:2
           },
           768: {
-            slidesPerView: 3,
             pagination:false,
             spaceBetween: 40,
-
+            slidesPerView:2
           },
           1024: {
             slidesPerView: 3,
