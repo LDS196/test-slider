@@ -41,8 +41,7 @@ Deploy project:
 yarn deploy
 ```
 
-![image](https://github.com/LDS196/test-slider/assets/105713345/3c3c90ae-ab62-4352-8cb4-3b4b9c7bd2c5)
-
+![Slider-preview.JPG](..%2F..%2FUsers%2Fuser%2FDesktop%2FSlider-preview.JPG)
 ---
 
 Описание Тестового задания
