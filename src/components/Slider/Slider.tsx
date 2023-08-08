@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import {Pagination,} from "swiper/modules"
+import { Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Event } from "../../data/data"
 import "./Slider.scss"
@@ -12,9 +12,10 @@ import { SlideNextButton } from "./SlideNextButton/SlideNextButton"
 
 type Props = {
   events: Event[]
+  id: number
 }
 
-const Slider = ({ events }: Props) => {
+const Slider = ({ events, id }: Props) => {
   const [hidePrevButton, setHidePrevButton] = useState(true)
   const [hideNextButton, setHideNextButton] = useState(false)
   const onReachBeginningHandler = () => {
@@ -33,7 +34,7 @@ const Slider = ({ events }: Props) => {
   ))
 
   return (
-    <div className="slider">
+    <div className="slider" key={id}>
       <Swiper
         modules={[Pagination]}
         onReachBeginning={() => onReachBeginningHandler()}

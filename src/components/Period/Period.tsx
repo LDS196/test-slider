@@ -4,7 +4,6 @@ import Round from "../Round/Round"
 import LineGradient from "../LineGradient/LineGradient"
 import Title from "../Title/Title"
 
-
 const Period = () => {
   return (
     <div className={s.container}>

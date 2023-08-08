@@ -107,10 +107,8 @@ const Round = () => {
           {periodForRender}
         </div>
       </div>
-      <div className={s.title}>
-        {currentPeriod?.title}
-      </div>
-      <Line/>
+      <div className={s.title}>{currentPeriod?.title}</div>
+      <Line />
       <div className={s.wrapperControl}>
         <Counter currentPeriodId={currentPeriodId} countPeriod={countPeriod} />
         <Control
@@ -121,7 +119,7 @@ const Round = () => {
         />
       </div>
 
-      <Slider events={events} />
+      <Slider id={currentPeriodId} events={events} />
     </div>
   )
 }

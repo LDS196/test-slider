@@ -34,11 +34,11 @@
     margin-bottom: 50px;
   }
 }
-.title{
+.title {
   display: none;
   @media screen and (max-width: 550px) {
-    padding: 0 20px 30px 20px ;
-   display: block;
+    padding: 0 20px 30px 20px;
+    display: block;
     color: $colorText;
     font-size: 18px;
     font-weight: 700;
