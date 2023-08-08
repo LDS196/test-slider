@@ -22,9 +22,17 @@ const Slider = ({ events, id }: Props) => {
     setHideNextButton(false)
     setHidePrevButton(true)
   }
+
   const onReachEndHandler = () => {
     setHideNextButton(true)
     setHidePrevButton(false)
+  }
+
+  const onHidePrevButton = () => {
+    setHidePrevButton(false)
+  }
+  const onHideNextButton = () => {
+    setHideNextButton(false)
   }
 
   const slides = events.map((event) => (
@@ -59,7 +67,7 @@ const Slider = ({ events, id }: Props) => {
       >
         {!hidePrevButton && (
           <div className="prevButton">
-            <SlidePrevButton />
+            <SlidePrevButton onHideNextButton={onHideNextButton} />
           </div>
         )}
 
@@ -67,7 +75,7 @@ const Slider = ({ events, id }: Props) => {
 
         {!hideNextButton && (
           <div className="nextButton">
-            <SlideNextButton />
+            <SlideNextButton onHidePrevButton={onHidePrevButton} />
           </div>
         )}
       </Swiper>

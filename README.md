@@ -41,8 +41,7 @@ Deploy project:
 yarn deploy
 ```
 
-![Slider-preview.JPG](src%2Fassets%2Fimg%2FSlider-preview.JPG)
----
+## ![Slider-preview.JPG](src%2Fassets%2Fimg%2FSlider-preview.JPG)
 
 Описание Тестового задания
 
