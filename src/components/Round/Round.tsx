@@ -14,7 +14,7 @@ const Round = () => {
   const countPeriod = data.length
   const [currentPeriodId, setCurrentPeriodId] = useState(1)
   const [prevPeriodId, setPrevPeriodId] = useState(1)
-  const [onMouseOverId, setOnMouseOverId] = useState<null | number>(null)
+  const [onMouseOverId, setOnMouseOverId] = useState<null | number>(null) // id элемента на который была наведена мышь
   const [rotateRound, setRotateRound] = useState(0) // поворот круга при клике
 
   const currentPeriod = data.find((el) => el.id === currentPeriodId)
@@ -26,7 +26,9 @@ const Round = () => {
   const prevPeriod = data.find((el) => el.id === prevPeriodId)
   const prevStartDate = prevPeriod?.startDate as number
   const prevEndDate = prevPeriod?.endDate as number
+
   const onMouseOverHandler = (id: number) => {
+    //
     if (!onMouseOverId && id !== currentPeriodId) {
       setOnMouseOverId(id)
     }
@@ -48,6 +50,7 @@ const Round = () => {
     }
   }
 
+  // клик по элементу на окружности
   const onClickHandler = (id: number) => {
     setRotateRound((-fullRound / countPeriod) * (id - currentPeriodId) + rotateRound)
     setCurrentPeriodId(id)
