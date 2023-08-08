@@ -31,22 +31,3 @@ img {
   height: auto;
 }
 
-.swiper-slide {
-  //max-width: 400px !important;
-  //@media screen and (max-width: 550px) {
-  //  max-width: 166px !important;  }
-}
-
-.swiper {
-  position: static !important;
-  cursor: grab;
-}
-.swiper-pagination .swiper-pagination-bullet {
-  opacity: 1;
-  background-color: $colorSmallRound;
-  width: 6px;
-  height: 6px;
-}
-.swiper-pagination .swiper-pagination-bullet-active {
-  background-color:$colorText ;
-}

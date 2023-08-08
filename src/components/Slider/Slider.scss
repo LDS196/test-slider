@@ -25,5 +25,23 @@
     display: none;
   }
 }
-
+.swiper {
+  position: static !important;
+  cursor: grab;
+}
+.swiper-pagination{
+  display: none;
+  @media screen and (max-width: 550px) {
+    display: block;
+  }
+}
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: $colorSmallRound;
+  width: 6px;
+  height: 6px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color:$colorText ;
+}
 
