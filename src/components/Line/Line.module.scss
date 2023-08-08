@@ -1,6 +1,11 @@
 @import "src/scss/variables";
 
 .line {
-  height: 1px;
-  background-color: $colorLine;
+  display: none;
+  @media screen and (max-width: 550px) {
+    display: block;
+    height: 1px;
+   margin: 0 20px 20px 20px;
+    background-color: $colorLine;
+  }
 }

@@ -5,6 +5,7 @@ import Control from "../Control/Control"
 import Counter from "../Counter/Counter"
 import Date from "../Date/Date"
 import Slider from "../Slider/Slider"
+import Line from "../Line/Line"
 
 const shift = 30 //первоначальное смещение
 const fullRound = 360 // 360 градусов полный круг
@@ -101,10 +102,15 @@ const Round = () => {
             prevEndDate={prevEndDate}
           />
         </div>
+
         <div className={s.container} style={styleRotateContainer}>
           {periodForRender}
         </div>
       </div>
+      <div className={s.title}>
+        {currentPeriod?.title}
+      </div>
+      <Line/>
       <div className={s.wrapperControl}>
         <Counter currentPeriodId={currentPeriodId} countPeriod={countPeriod} />
         <Control

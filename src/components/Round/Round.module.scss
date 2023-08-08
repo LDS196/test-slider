@@ -31,12 +31,19 @@
     position: relative;
     top: 0;
     left: 0;
-    padding-bottom: 57px;
-    border-bottom: 1px solid $colorLine;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
-
+.title{
+  display: none;
+  @media screen and (max-width: 550px) {
+    padding: 0 20px 30px 20px ;
+   display: block;
+    color: $colorText;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
 .container {
   width: 530px;
   height: 530px;
