@@ -1,39 +1,39 @@
 @import "src/scss/variables";
-.date{
+.date {
   font-size: 200px;
   font-style: normal;
   font-weight: 700;
   line-height: 160px;
   letter-spacing: -4px;
-  @media screen and (max-width: 1024px)  {
+  @media screen and (max-width: 1024px) {
     font-size: 130px;
     line-height: 160px;
   }
-  @media screen and (max-width: 768px)  {
+  @media screen and (max-width: 768px) {
     font-size: 80px;
     line-height: 160px;
   }
-  @media screen and (max-width: 550px)  {
+  @media screen and (max-width: 550px) {
     font-size: 56px;
     line-height: normal;
     letter-spacing: -1.12px;
   }
-  @media screen and (max-width: 300px)  {
+  @media screen and (max-width: 300px) {
     font-size: 36px;
     line-height: normal;
     letter-spacing: -1.12px;
   }
 }
-.startDate{
+.startDate {
   color: $colorDatePurple;
   margin-right: 70px;
-  @media screen and (max-width: 550px)  {
-    margin-right:40px;
+  @media screen and (max-width: 550px) {
+    margin-right: 40px;
   }
-  @media screen and (max-width: 300px)  {
-    margin-right:25px;
+  @media screen and (max-width: 300px) {
+    margin-right: 25px;
   }
 }
-.endDate{
+.endDate {
   color: $colorDatePink;
 }

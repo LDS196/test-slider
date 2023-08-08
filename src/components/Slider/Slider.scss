@@ -1,20 +1,18 @@
 @import "src/scss/variables";
 
-
 .slider {
   position: relative;
   padding: 0 80px;
   @media screen and (max-width: 550px) {
     padding: 0 20px 0 20px;
   }
-
 }
 .prevButton {
   position: absolute;
   left: 20px;
   top: 50px;
   @media screen and (max-width: 550px) {
-  display: none;
+    display: none;
   }
 }
 
@@ -30,7 +28,7 @@
   position: static !important;
   cursor: grab;
 }
-.swiper-pagination{
+.swiper-pagination {
   display: none;
   @media screen and (max-width: 550px) {
     display: block;
@@ -46,6 +44,5 @@
   height: 6px;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color:$colorText ;
+  background-color: $colorText;
 }
-

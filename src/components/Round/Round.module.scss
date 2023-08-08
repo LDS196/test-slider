@@ -44,7 +44,7 @@
   border: 1px solid $colorRound;
   position: relative;
   @media screen and (max-width: 550px) {
-    display: none
+    display: none;
   }
 }
 
@@ -86,7 +86,6 @@
       animation-name: title;
       animation-duration: 0.5s;
     }
-
   }
 }
 
@@ -111,7 +110,6 @@
   100% {
     opacity: 1;
     background: $backgroundPage;
-
   }
 }
 
@@ -126,4 +124,3 @@
     opacity: 1;
   }
 }
-

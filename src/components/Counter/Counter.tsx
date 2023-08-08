@@ -1,17 +1,12 @@
-import React from 'react';
-import s from './Counter.module.scss'
+import React from "react"
+import s from "./Counter.module.scss"
 type Props = {
-  countPeriod:number
+  countPeriod: number
   currentPeriodId: number
 }
-const  Counter = ({currentPeriodId,countPeriod}: Props) => {
-
+const Counter = ({ currentPeriodId, countPeriod }: Props) => {
   const counter = `0${currentPeriodId}/0${countPeriod}`
-  return (
-    <div className={s.counter}>
-      {counter}
-    </div>
-  );
-};
+  return <div className={s.counter}>{counter}</div>
+}
 
-export default Counter;
+export default Counter

@@ -1,10 +1,7 @@
-import React from 'react';
-import s from './LineGradient.module.scss'
+import React from "react"
+import s from "./LineGradient.module.scss"
 const LineGradient = () => {
-  return (
-    <div   className={s.lineGradient}>
-    </div>
-  );
-};
+  return <div className={s.lineGradient}></div>
+}
 
-export default LineGradient;
+export default LineGradient
