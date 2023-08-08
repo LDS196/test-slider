@@ -1,4 +1,4 @@
-import React, {  useState } from "react"
+import React, { useState } from "react"
 import { Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Event } from "../../data/data"
@@ -50,21 +50,23 @@ const Slider = ({ events, id }: Props) => {
         onReachBeginning={() => onReachBeginningHandler()}
         onReachEnd={() => onReachEndHandler()}
         spaceBetween={20}
+        mousewheel={true}
+        keyboard={true}
         slidesPerView={1.5}
         pagination={{ clickable: true }}
         breakpoints={{
           400: {
             spaceBetween: 25,
-            slidesPerView: 2,
+            slidesPerView: 2
           },
           768: {
             spaceBetween: 40,
-            slidesPerView: 2,
+            slidesPerView: 2
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 80,
-          },
+            spaceBetween: 80
+          }
         }}
       >
         {!hidePrevButton && (
