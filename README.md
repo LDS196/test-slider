@@ -7,7 +7,7 @@
 ## Технологии
 ![React](https://img.shields.io/badge/-React-61daf8?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue)
-![Swiper](https://img.shields.io/badge/-ReactHookForm-pink)
+![Swiper](https://img.shields.io/badge/-Swiper-pink)
 
 ![HTML5](https://img.shields.io/badge/-HTML5-e34f26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572b6?logo=css3&logoColor=white)
