@@ -1,10 +1,11 @@
-import  React  from 'react';
+import React from 'react';
 import { useSwiper } from 'swiper/react';
 import s from './SlidePrevButton.module.scss'
 
-export function SlidePrevButton() {
+
+export const SlidePrevButton=()=> {
+
   const swiper = useSwiper();
-  console.log(swiper.activeIndex)
   return (
     <button
       className={s.buttonPrev}

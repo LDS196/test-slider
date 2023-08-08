@@ -5,7 +5,6 @@ import Control from "../Control/Control";
 import Counter from "../Counter/Counter";
 import Date from "../Date/Date";
 import Slider from "../Slider/Slider";
-import SlideNextButton from "../Slider/SlideNextButton/SlideNextButton";
 
 const shift = 30 //первоначальное смещение
 const fullRound = 360 // 360 градусов полный круг

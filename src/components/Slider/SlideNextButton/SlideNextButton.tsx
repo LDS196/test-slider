@@ -1,7 +1,10 @@
-import  React  from 'react';
-import { useSwiper } from 'swiper/react';
+import React from 'react';
+import {useSwiper} from 'swiper/react';
 import s from './SlideNextButton.module.scss'
-export default function SlideNextButton() {
+
+
+export const SlideNextButton = () => {
+
   const swiper = useSwiper();
 
   return (

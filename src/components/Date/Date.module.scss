@@ -18,12 +18,20 @@
     line-height: normal;
     letter-spacing: -1.12px;
   }
+  @media screen and (max-width: 300px)  {
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
 }
 .startDate{
   color: $colorDatePurple;
   margin-right: 70px;
   @media screen and (max-width: 550px)  {
     margin-right:40px;
+  }
+  @media screen and (max-width: 300px)  {
+    margin-right:25px;
   }
 }
 .endDate{
