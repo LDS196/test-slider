@@ -1,4 +1,4 @@
-:seedling: <a href="test-slider-eosin.vercel.app" target="_blank">Slider for historical events</a>
+:seedling: <a href="https://test-slider-eosin.vercel.app/" target="_blank">Slider for historical events</a>
 ---
 в этом проекте реализован виджет, который содержит информацию о временных отрезках, в каждом из которых существует несколько событий. 
 При переключении временных отрезков изменяются соответствующие числа и под ними показывается новый слайдер, который содержит подробную информацию по ключевым событиям на активном временном отрезке
